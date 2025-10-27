@@ -1,0 +1,476 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\controllers\\bookvoicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\controllers\\bookvoicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\models\\bookvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\models\\bookvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\controllers\\statisticsapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\controllers\\statisticsapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\controllers\\orderitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\controllers\\orderitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\models\\statisticsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\models\\statisticsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\models\\bookmagazincontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\models\\bookmagazincontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\controllers\\adaptationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\controllers\\adaptationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\bookmagazin.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\bookmagazin.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\controllers\\favoriteitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\controllers\\favoriteitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\models\\favoriteitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\models\\favoriteitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\controllers\\cartitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\controllers\\cartitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\bookmagazin\\bookmagazin\\controllers\\genrescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562DFB0F-3A57-486E-8218-DFF5381BAFC0}|BookMagazin\\BookMagazin.csproj|solutionrelative:bookmagazin\\controllers\\genrescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 313,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookVoice.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Models\\BookVoice.cs",
+              "RelativeDocumentMoniker": "BookMagazin\\Models\\BookVoice.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Models\\BookVoice.cs",
+              "RelativeToolTip": "BookMagazin\\Models\\BookVoice.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAQwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T07:51:48.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StatisticsApiController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\StatisticsApiController.cs",
+              "RelativeDocumentMoniker": "BookMagazin\\Controllers\\StatisticsApiController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\StatisticsApiController.cs",
+              "RelativeToolTip": "BookMagazin\\Controllers\\StatisticsApiController.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAIwHAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T19:48:45.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "BookMagazin\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "BookMagazin\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAN0AAAAAAAAAAAAswOkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T14:18:16.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderItemsController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\OrderItemsController.cs",
+              "RelativeDocumentMoniker": "BookMagazin\\Controllers\\OrderItemsController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\OrderItemsController.cs",
+              "RelativeToolTip": "BookMagazin\\Controllers\\OrderItemsController.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAYwEgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T14:14:00.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookVoicesController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\BookVoicesController.cs",
+              "RelativeDocumentMoniker": "BookMagazin\\Controllers\\BookVoicesController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\BookVoicesController.cs",
+              "RelativeToolTip": "BookMagazin\\Controllers\\BookVoicesController.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAAwJMAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T07:54:35.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StatisticsData.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Models\\StatisticsData.cs",
+              "RelativeDocumentMoniker": "BookMagazin\\Models\\StatisticsData.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Models\\StatisticsData.cs",
+              "RelativeToolTip": "BookMagazin\\Models\\StatisticsData.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAIwAoAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T19:40:15.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "BookMagazin\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "BookMagazin\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAYwHMAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T14:13:15.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdaptationsController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\AdaptationsController.cs",
+              "RelativeDocumentMoniker": "BookMagazin\\Controllers\\AdaptationsController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\AdaptationsController.cs",
+              "RelativeToolTip": "BookMagazin\\Controllers\\AdaptationsController.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAiwF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T14:00:38.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "BookMagazin\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "BookMagazin\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T12:23:35.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookMagazinContext.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Models\\BookMagazinContext.cs",
+              "RelativeDocumentMoniker": "BookMagazin\\Models\\BookMagazinContext.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Models\\BookMagazinContext.cs",
+              "RelativeToolTip": "BookMagazin\\Models\\BookMagazinContext.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAuwF8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T19:00:27.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Program.cs",
+              "RelativeDocumentMoniker": "BookMagazin\\Program.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Program.cs",
+              "RelativeToolTip": "BookMagazin\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T13:43:31.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "BookMagazin\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "BookMagazin\\Controllers\\BooksController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T14:01:58.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ReviewsController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\ReviewsController.cs",
+              "RelativeDocumentMoniker": "BookMagazin\\Controllers\\ReviewsController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\ReviewsController.cs",
+              "RelativeToolTip": "BookMagazin\\Controllers\\ReviewsController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAYwGwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T14:15:17.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "BookMagazin\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Models\\Book.cs",
+              "RelativeToolTip": "BookMagazin\\Models\\Book.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAQwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T16:34:05.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BookMagazin.csproj",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\BookMagazin.csproj",
+              "RelativeDocumentMoniker": "BookMagazin\\BookMagazin.csproj",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\BookMagazin.csproj",
+              "RelativeToolTip": "BookMagazin\\BookMagazin.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-12T19:48:59.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\appsettings.json",
+              "RelativeDocumentMoniker": "BookMagazin\\appsettings.json",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\appsettings.json",
+              "RelativeToolTip": "BookMagazin\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-10T13:44:03.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BookMagazin\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BookMagazin\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T16:44:10.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AuthorsController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\AuthorsController.cs",
+              "RelativeDocumentMoniker": "BookMagazin\\Controllers\\AuthorsController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\AuthorsController.cs",
+              "RelativeToolTip": "BookMagazin\\Controllers\\AuthorsController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAYwGQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T14:01:20.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Models\\User.cs",
+              "RelativeDocumentMoniker": "BookMagazin\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Models\\User.cs",
+              "RelativeToolTip": "BookMagazin\\Models\\User.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAywBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T19:23:21.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\RolesController.cs",
+              "RelativeDocumentMoniker": "BookMagazin\\Controllers\\RolesController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\RolesController.cs",
+              "RelativeToolTip": "BookMagazin\\Controllers\\RolesController.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAYwGsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T14:16:04.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CartItemsController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\CartItemsController.cs",
+              "RelativeDocumentMoniker": "BookMagazin\\Controllers\\CartItemsController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\CartItemsController.cs",
+              "RelativeToolTip": "BookMagazin\\Controllers\\CartItemsController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T14:08:16.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FavoriteItem.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Models\\FavoriteItem.cs",
+              "RelativeDocumentMoniker": "BookMagazin\\Models\\FavoriteItem.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Models\\FavoriteItem.cs",
+              "RelativeToolTip": "BookMagazin\\Models\\FavoriteItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T15:50:03.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FavoriteItemsController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\FavoriteItemsController.cs",
+              "RelativeDocumentMoniker": "BookMagazin\\Controllers\\FavoriteItemsController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\FavoriteItemsController.cs",
+              "RelativeToolTip": "BookMagazin\\Controllers\\FavoriteItemsController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T14:09:09.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "BookMagazin\\Models\\CartItem.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Models\\CartItem.cs",
+              "RelativeToolTip": "BookMagazin\\Models\\CartItem.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAkwA8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T14:31:26.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "GenresController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\GenresController.cs",
+              "RelativeDocumentMoniker": "BookMagazin\\Controllers\\GenresController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\BookMagazin\\BookMagazin\\Controllers\\GenresController.cs",
+              "RelativeToolTip": "BookMagazin\\Controllers\\GenresController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T14:09:50.94Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 313,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 114,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
