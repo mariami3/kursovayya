@@ -1,0 +1,12 @@
+﻿@model Magazin.Models.Book
+<div class="container py-4">
+    <h2 class="fw-bold text-center mb-4 text-danger">🗑 Удалить книгу</h2>
+    <div class="alert alert-warning text-center">
+        Удалить книгу <b>@Model.Title</b>?
+    </div>
+    <form asp-action="DeleteBook" method="post" class="text-center">
+        <input type="hidden" asp-for="IdBook" />
+        <button class="btn btn-danger">Удалить</button>
+        <a asp-action="Books" class="btn btn-secondary">Отмена</a>
+    </form>
+</div>

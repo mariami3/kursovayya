@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Magazin.Models.Book>
+<div class="container py-4">
+    <h2 class="mb-4 fw-bold text-center">📚 Книги</h2>
+    <a asp-action="CreateBook" class="btn btn-success mb-3">➕ Добавить книгу</a>
+    <table class="table table-bordered table-striped">
+        <thead class="table-light">
+            <tr>
+                <th>Название</th>
+                <th>Автор</th>
+                <th>Жанр</th>
+                <th>Цена</th>
+                <th class="text-center">Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var b in Model)
+            {
+                <tr>
+                    <td>@b.Title</td>
+                    <td>@b.Author?.NameAuthor</td>
+                    <td>@b.Genre?.NameGenre</td>
+                    <td>@b.Price</td>
+                    <td class="text-center">
+                        <a asp-action="EditBook" asp-route-id="@b.IdBook" class="btn btn-primary btn-sm">✏</a>
+                        <a asp-action="DeleteBook" asp-route-id="@b.IdBook" class="btn btn-danger btn-sm">🗑</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

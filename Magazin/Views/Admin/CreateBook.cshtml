@@ -1,0 +1,102 @@
+﻿@model Magazin.Models.Book
+
+<div class="container py-4">
+    <h2 class="fw-bold text-center mb-4">➕ Добавить книгу</h2>
+    <form asp-action="CreateBook" method="post" class="w-75 mx-auto">
+        <div class="mb-3">
+            <label class="form-label">Название</label>
+            <input asp-for="Title" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Описание</label>
+            <textarea asp-for="Description" class="form-control"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Ссылка на обложку/файл</label>
+            <input asp-for="BookUrl" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Цена</label>
+            <input asp-for="Price" type="number" step="0.01" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Тип книги</label>
+            <input asp-for="BookType" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Количество страниц</label>
+            <input asp-for="Pages" type="number" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Вес (граммы)</label>
+            <input asp-for="WeightGr" type="number" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Размер</label>
+            <input asp-for="Size" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Жанр</label>
+            <select asp-for="GenreId" asp-items="ViewBag.Genres" required class="form-select">
+                <option value="">-- выберите жанр --</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Автор</label>
+            <select asp-for="AuthorId" asp-items="ViewBag.Authors" required class="form-select">
+                <option value="">-- выберите автора --</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Издательство</label>
+            <input asp-for="PublisherBrand" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Год публикации</label>
+            <input asp-for="PublicationYear" type="number" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Возрастное ограничение</label>
+            <input asp-for="AgeLimit" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Год издания</label>
+            <input asp-for="EditionYear" type="number" class="form-control" />
+        </div>
+
+        <div class="form-check mb-3">
+            <input asp-for="IsActive" class="form-check-input" type="checkbox" />
+            <label class="form-check-label">Активна в магазине</label>
+        </div>
+
+        <button id="saveBtn" type="submit" class="btn btn-success">Сохранить</button>
+        <a asp-action="Books" class="btn btn-secondary">Отмена</a>
+    </form>
+</div>
+
+<script>
+    const saveBtn = document.getElementById("saveBtn");
+    const author = document.querySelector("[name='AuthorId']");
+    const genre = document.querySelector("[name='GenreId']");
+
+    function checkForm() {
+        saveBtn.disabled = !author.value || !genre.value;
+    }
+
+    author.addEventListener("change", checkForm);
+    genre.addEventListener("change", checkForm);
+    checkForm();
+</script>

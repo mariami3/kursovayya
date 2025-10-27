@@ -1,0 +1,12 @@
+﻿@model Magazin.Models.Author
+<div class="container py-4">
+    <h2 class="fw-bold text-center mb-4 text-danger">🗑 Удалить автора</h2>
+    <div class="alert alert-warning text-center">
+        Удалить автора <b>@Model.NameAuthor</b>?
+    </div>
+    <form asp-action="DeleteAuthor" method="post" class="text-center">
+        <input type="hidden" asp-for="IdAuthor" />
+        <button class="btn btn-danger">Удалить</button>
+        <a asp-action="Authors" class="btn btn-secondary">Отмена</a>
+    </form>
+</div>

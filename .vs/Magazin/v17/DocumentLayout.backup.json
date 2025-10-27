@@ -1,0 +1,1394 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\editbookvoice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\editbookvoice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\createbookvoice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\createbookvoice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\services\\bookvoicesapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\services\\bookvoicesapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\bookvoices.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\bookvoices.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\models\\bookvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\models\\bookvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\models\\statisticsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\models\\statisticsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\basket\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\basket\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\services\\orderapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\services\\orderapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\services\\orderitemapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\services\\orderitemapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\order\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\order\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\statistics\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\statistics\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\manager\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\manager\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\manager\\orderdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\manager\\orderdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\controllers\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\controllers\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\main.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\main.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\models\\bookmagazincontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\models\\bookmagazincontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\controllers\\catalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\controllers\\catalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\deletebookvoice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\deletebookvoice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\editbook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\editbook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\deletebook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\deletebook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\createbook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\createbook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\books.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\books.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\catalog\\detailsbook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\catalog\\detailsbook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\shared\\header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\shared\\header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\services\\adaptationapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\services\\adaptationapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\services\\userapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\services\\userapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\catalog\\catalog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\catalog\\catalog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\manager\\updatestatus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\manager\\updatestatus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\manager\\analytics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\manager\\analytics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\account\\autorization.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\account\\autorization.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\favorites\\favorite.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\favorites\\favorite.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\services\\bookapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\services\\bookapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\models\\reviewviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\models\\reviewviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\editadaptation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\editadaptation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\createadaptation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\createadaptation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\adaptations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\adaptations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\authors.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\authors.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\roles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\roles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\genres.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\genres.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\services\\authorapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\services\\authorapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\services\\genreapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\services\\genreapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\services\\roleapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\services\\roleapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\deleteadaptation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\deleteadaptation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\deleterole.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\deleterole.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\editrole.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\editrole.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\createrole.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\createrole.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\deleteuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\deleteuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\deleteauthor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\deleteauthor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\editauthor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\editauthor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\createauthor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\createauthor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\deletegenre.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\deletegenre.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\editgenre.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\editgenre.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\admin\\creategenre.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\admin\\creategenre.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\shared\\footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\shared\\footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\views\\error\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\views\\error\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\services\\reviewapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\services\\reviewapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\controllers\\favoritescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\controllers\\favoritescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|c:\\users\\\u0434\u0430\u0440\u0438\u043A\u043E\\source\\repos\\magazin\\magazin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCBB010-F211-4101-8222-4A560368E575}|Magazin\\Magazin.csproj|solutionrelative:magazin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 375,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookVoicesApiService.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Services\\BookVoicesApiService.cs",
+              "RelativeDocumentMoniker": "Magazin\\Services\\BookVoicesApiService.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Services\\BookVoicesApiService.cs",
+              "RelativeToolTip": "Magazin\\Services\\BookVoicesApiService.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAswCIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T08:08:25.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateBookVoice.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\CreateBookVoice.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\CreateBookVoice.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\CreateBookVoice.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\CreateBookVoice.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-13T12:12:48.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditBookVoice.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\EditBookVoice.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\EditBookVoice.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\EditBookVoice.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\EditBookVoice.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwC0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-13T12:13:17.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Program.cs",
+              "RelativeDocumentMoniker": "Magazin\\Program.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Program.cs",
+              "RelativeToolTip": "Magazin\\Program.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAADwv2EAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T12:30:51.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Magazin\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Magazin\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAM0BAAAAAAAAAAAAANIBAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T06:07:09.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookVoices.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\BookVoices.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\BookVoices.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\BookVoices.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\BookVoices.cshtml",
+              "ViewState": "AgIAABEAAAAAAAAAAADwvxwAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-13T12:12:22.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BookVoice.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Models\\BookVoice.cs",
+              "RelativeDocumentMoniker": "Magazin\\Models\\BookVoice.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Models\\BookVoice.cs",
+              "RelativeToolTip": "Magazin\\Models\\BookVoice.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAwA8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T07:59:22.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StatisticsData.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Models\\StatisticsData.cs",
+              "RelativeDocumentMoniker": "Magazin\\Models\\StatisticsData.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Models\\StatisticsData.cs",
+              "RelativeToolTip": "Magazin\\Models\\StatisticsData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T20:12:45.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StatisticsController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Controllers\\StatisticsController.cs",
+              "RelativeDocumentMoniker": "Magazin\\Controllers\\StatisticsController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Controllers\\StatisticsController.cs",
+              "RelativeToolTip": "Magazin\\Controllers\\StatisticsController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwHgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T20:02:01.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Magazin\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Magazin\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAwwLwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T06:09:27.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Cart.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Basket\\Cart.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Basket\\Cart.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Basket\\Cart.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Basket\\Cart.cshtml",
+              "ViewState": "AgIAAOQAAAAAAAAAAADwvxcBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-19T15:58:45.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrderItemApiService.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Services\\OrderItemApiService.cs",
+              "RelativeDocumentMoniker": "Magazin\\Services\\OrderItemApiService.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Services\\OrderItemApiService.cs",
+              "RelativeToolTip": "Magazin\\Services\\OrderItemApiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T08:04:04.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "List.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Order\\List.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Order\\List.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Order\\List.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Order\\List.cshtml",
+              "ViewState": "AgIAAEwBAAAAAAAAAADwv2UBAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-13T15:39:26.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderApiService.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Services\\OrderApiService.cs",
+              "RelativeDocumentMoniker": "Magazin\\Services\\OrderApiService.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Services\\OrderApiService.cs",
+              "RelativeToolTip": "Magazin\\Services\\OrderApiService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAgwDIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T08:03:37.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BasketController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Controllers\\BasketController.cs",
+              "RelativeDocumentMoniker": "Magazin\\Controllers\\BasketController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Controllers\\BasketController.cs",
+              "RelativeToolTip": "Magazin\\Controllers\\BasketController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAkwGsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T06:07:54.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Order\\Details.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Order\\Details.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Order\\Details.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Order\\Details.cshtml",
+              "ViewState": "AgIAAE8BAAAAAAAAAADwv2IBAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-13T15:39:10.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CartService.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Services\\CartService.cs",
+              "RelativeDocumentMoniker": "Magazin\\Services\\CartService.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Services\\CartService.cs",
+              "RelativeToolTip": "Magazin\\Services\\CartService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T14:49:19.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Statistics\\Index.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Statistics\\Index.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Statistics\\Index.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Statistics\\Index.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAIwEwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-05T20:04:56.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ManagerController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Controllers\\ManagerController.cs",
+              "RelativeDocumentMoniker": "Magazin\\Controllers\\ManagerController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Controllers\\ManagerController.cs",
+              "RelativeToolTip": "Magazin\\Controllers\\ManagerController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwEwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T17:27:51.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Magazin\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Models\\User.cs",
+              "RelativeToolTip": "Magazin\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T16:27:21.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Orders.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Manager\\Orders.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Manager\\Orders.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Manager\\Orders.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Manager\\Orders.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-01T17:55:47.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OrderDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Manager\\OrderDetails.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Manager\\OrderDetails.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Manager\\OrderDetails.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Manager\\OrderDetails.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-01T17:56:03.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Main.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\Main.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\Main.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\Main.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\Main.cshtml",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAgwGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-15T14:04:48.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BookMagazinContext.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Models\\BookMagazinContext.cs",
+              "RelativeDocumentMoniker": "Magazin\\Models\\BookMagazinContext.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Models\\BookMagazinContext.cs",
+              "RelativeToolTip": "Magazin\\Models\\BookMagazinContext.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T07:48:51.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CatalogController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Controllers\\CatalogController.cs",
+              "RelativeDocumentMoniker": "Magazin\\Controllers\\CatalogController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Controllers\\CatalogController.cs",
+              "RelativeToolTip": "Magazin\\Controllers\\CatalogController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAswGAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T06:08:30.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DeleteBookVoice.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\DeleteBookVoice.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\DeleteBookVoice.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\DeleteBookVoice.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\DeleteBookVoice.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-13T12:13:37.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Books.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\Books.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\Books.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\Books.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\Books.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAIwAwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T16:03:15.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CreateBook.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\CreateBook.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\CreateBook.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\CreateBook.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\CreateBook.cshtml",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAIwFQAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T16:03:41.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DeleteBook.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\DeleteBook.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\DeleteBook.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\DeleteBook.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\DeleteBook.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T18:24:59.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "EditBook.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\EditBook.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\EditBook.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\EditBook.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\EditBook.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAIwE8AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T16:04:06.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "DetailsBook.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Catalog\\DetailsBook.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Catalog\\DetailsBook.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Catalog\\DetailsBook.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Catalog\\DetailsBook.cshtml",
+              "ViewState": "AgIAAPMBAAAAAAAAAAAuwAUCAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-13T15:37:47.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Header.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Shared\\Header.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Shared\\Header.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Shared\\Header.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Shared\\Header.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAIBJwCUAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-23T09:15:35.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AdaptationApiService.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Services\\AdaptationApiService.cs",
+              "RelativeDocumentMoniker": "Magazin\\Services\\AdaptationApiService.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Services\\AdaptationApiService.cs",
+              "RelativeToolTip": "Magazin\\Services\\AdaptationApiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T14:44:27.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "UserApiService.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Services\\UserApiService.cs",
+              "RelativeDocumentMoniker": "Magazin\\Services\\UserApiService.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Services\\UserApiService.cs",
+              "RelativeToolTip": "Magazin\\Services\\UserApiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T14:45:22.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Catalog.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Catalog\\Catalog.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Catalog\\Catalog.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Catalog\\Catalog.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Catalog\\Catalog.cshtml",
+              "ViewState": "AgIAANYAAAAAAAAAAAAkwDcBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-13T15:37:19.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UpdateStatus.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Manager\\UpdateStatus.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Manager\\UpdateStatus.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Manager\\UpdateStatus.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Manager\\UpdateStatus.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAkwBsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-01T17:56:21.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Analytics.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Manager\\Analytics.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Manager\\Analytics.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Manager\\Analytics.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Manager\\Analytics.cshtml",
+              "ViewState": "AgIAABcAAAAAAAAAAAAkwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-01T17:55:29.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ResetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Account\\ResetPassword.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Account\\ResetPassword.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Account\\ResetPassword.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Account\\ResetPassword.cshtml",
+              "ViewState": "AgIAAFkBAAAAAAAAAAAkwHUBAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-13T15:12:26.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALQBAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-13T15:11:52.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Account\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Account\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Account\\ForgotPassword.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Account\\ForgotPassword.cshtml",
+              "ViewState": "AgIAAD4BAAAAAAAAAAAgwFgBAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-13T15:11:32.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Autorization.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Account\\Autorization.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Account\\Autorization.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Account\\Autorization.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Account\\Autorization.cshtml",
+              "ViewState": "AgIAAHYBAAAAAAAAAAAkwIUBAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-13T15:10:39.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Favorite.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Favorites\\Favorite.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Favorites\\Favorite.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Favorites\\Favorite.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Favorites\\Favorite.cshtml",
+              "ViewState": "AgIAAAIBAAAAAAAAAAAkwB4BAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-13T15:38:17.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Magazin\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Magazin\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAUwE8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-16T10:36:13.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Magazin\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Magazin\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAMcAAAAAAAAAAAAgwNYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T07:47:03.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "BookApiService.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Services\\BookApiService.cs",
+              "RelativeDocumentMoniker": "Magazin\\Services\\BookApiService.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Services\\BookApiService.cs",
+              "RelativeToolTip": "Magazin\\Services\\BookApiService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAiwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T14:45:00.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ReviewViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Models\\ReviewViewModel.cs",
+              "RelativeDocumentMoniker": "Magazin\\Models\\ReviewViewModel.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Models\\ReviewViewModel.cs",
+              "RelativeToolTip": "Magazin\\Models\\ReviewViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T08:33:40.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "CreateUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\CreateUser.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\CreateUser.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\CreateUser.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\CreateUser.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T16:00:33.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "EditUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\EditUser.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\EditUser.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\EditUser.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\EditUser.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T16:00:57.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "EditAdaptation.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\EditAdaptation.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\EditAdaptation.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\EditAdaptation.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\EditAdaptation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-23T09:35:51.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "CreateAdaptation.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\CreateAdaptation.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\CreateAdaptation.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\CreateAdaptation.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\CreateAdaptation.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvx0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-23T09:30:56.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Adaptations.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\Adaptations.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\Adaptations.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\Adaptations.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\Adaptations.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvwwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T18:27:30.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Authors.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\Authors.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\Authors.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\Authors.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\Authors.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-23T09:38:35.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Roles.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\Roles.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\Roles.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\Roles.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\Roles.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T18:27:04.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Genres.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\Genres.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\Genres.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\Genres.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\Genres.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T16:22:28.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "AuthorApiService.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Services\\AuthorApiService.cs",
+              "RelativeDocumentMoniker": "Magazin\\Services\\AuthorApiService.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Services\\AuthorApiService.cs",
+              "RelativeToolTip": "Magazin\\Services\\AuthorApiService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAcwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T14:44:54.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "GenreApiService.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Services\\GenreApiService.cs",
+              "RelativeDocumentMoniker": "Magazin\\Services\\GenreApiService.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Services\\GenreApiService.cs",
+              "RelativeToolTip": "Magazin\\Services\\GenreApiService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAcwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T14:45:13.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "RoleApiService.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Services\\RoleApiService.cs",
+              "RelativeDocumentMoniker": "Magazin\\Services\\RoleApiService.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Services\\RoleApiService.cs",
+              "RelativeToolTip": "Magazin\\Services\\RoleApiService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAcwBoAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T06:51:46.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "DeleteAdaptation.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\DeleteAdaptation.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\DeleteAdaptation.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\DeleteAdaptation.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\DeleteAdaptation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T18:31:54.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "DeleteRole.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\DeleteRole.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\DeleteRole.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\DeleteRole.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\DeleteRole.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T18:31:06.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "EditRole.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\EditRole.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\EditRole.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\EditRole.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\EditRole.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T18:30:41.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "CreateRole.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\CreateRole.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\CreateRole.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\CreateRole.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\CreateRole.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T18:30:17.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "DeleteUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\DeleteUser.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\DeleteUser.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\DeleteUser.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\DeleteUser.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T18:26:10.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Users.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\Users.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\Users.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\Users.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\Users.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T16:00:11.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "DeleteAuthor.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\DeleteAuthor.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\DeleteAuthor.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\DeleteAuthor.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\DeleteAuthor.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T18:21:00.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "CreateAuthor.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\CreateAuthor.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\CreateAuthor.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\CreateAuthor.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\CreateAuthor.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-23T09:38:57.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "DeleteGenre.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\DeleteGenre.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\DeleteGenre.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\DeleteGenre.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\DeleteGenre.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T18:16:52.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "CreateGenre.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\CreateGenre.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\CreateGenre.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\CreateGenre.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\CreateGenre.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T16:23:09.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "EditAuthor.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\EditAuthor.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\EditAuthor.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\EditAuthor.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\EditAuthor.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-23T09:39:24.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "EditGenre.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\EditGenre.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Admin\\EditGenre.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Admin\\EditGenre.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Admin\\EditGenre.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T16:26:11.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "Footer.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Shared\\Footer.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Shared\\Footer.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Shared\\Footer.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Shared\\Footer.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T13:16:49.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-15T14:02:33.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "ErrorController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Controllers\\ErrorController.cs",
+              "RelativeDocumentMoniker": "Magazin\\Controllers\\ErrorController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Controllers\\ErrorController.cs",
+              "RelativeToolTip": "Magazin\\Controllers\\ErrorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T18:20:24.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Error\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "Magazin\\Views\\Error\\AccessDenied.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Views\\Error\\AccessDenied.cshtml",
+              "RelativeToolTip": "Magazin\\Views\\Error\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-23T18:21:36.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "ReviewApiService.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Services\\ReviewApiService.cs",
+              "RelativeDocumentMoniker": "Magazin\\Services\\ReviewApiService.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Services\\ReviewApiService.cs",
+              "RelativeToolTip": "Magazin\\Services\\ReviewApiService.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowCkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T14:45:18.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "ReviewsController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Controllers\\ReviewsController.cs",
+              "RelativeDocumentMoniker": "Magazin\\Controllers\\ReviewsController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Controllers\\ReviewsController.cs",
+              "RelativeToolTip": "Magazin\\Controllers\\ReviewsController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAwwFIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T11:29:41.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "Magazin\\Models\\CartItem.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Models\\CartItem.cs",
+              "RelativeToolTip": "Magazin\\Models\\CartItem.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAIBJwA0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T15:06:03.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "FavoritesController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Controllers\\FavoritesController.cs",
+              "RelativeDocumentMoniker": "Magazin\\Controllers\\FavoritesController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Controllers\\FavoritesController.cs",
+              "RelativeToolTip": "Magazin\\Controllers\\FavoritesController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowE0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T06:08:58.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Magazin\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0430\u0440\u0438\u043A\u043E\\source\\repos\\Magazin\\Magazin\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Magazin\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T14:07:59.233Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 52,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 114,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

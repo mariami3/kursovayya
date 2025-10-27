@@ -1,0 +1,14 @@
+﻿@model Magazin.Models.Author
+<div class="container py-4">
+    <h2 class="fw-bold text-center mb-4">✏ Редактировать автора</h2>
+    <form asp-action="EditAuthor" method="post" class="w-50 mx-auto">
+        <input type="hidden" asp-for="IdAuthor" />
+        <div class="mb-3">
+            <label class="form-label">Имя автора</label>
+            <input asp-for="NameAuthor" class="form-control" />
+            <span asp-validation-for="NameAuthor" class="text-danger"></span>
+        </div>
+        <button class="btn btn-primary">Сохранить</button>
+        <a asp-action="Authors" class="btn btn-secondary">Отмена</a>
+    </form>
+</div>

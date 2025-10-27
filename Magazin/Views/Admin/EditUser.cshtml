@@ -1,0 +1,25 @@
+﻿@model Magazin.Models.User
+<div class="container py-4">
+    <h2 class="fw-bold text-center mb-4">✏ Редактировать пользователя</h2>
+    <form asp-controller="Admin" asp-action="EditUser" method="post" class="w-50 mx-auto">
+        <input type="hidden" asp-for="IdUser" />
+        <div class="mb-3">
+            <label class="form-label">Логин</label>
+            <input asp-for="LoginUser" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input asp-for="Email" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Роль</label>
+            <select asp-for="RoleId" asp-items="ViewBag.Roles" class="form-select"></select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Новый пароль (оставьте пустым, если не меняете)</label>
+            <input name="newPassword" type="password" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Сохранить</button>
+        <a asp-action="Users" class="btn btn-secondary">Отмена</a>
+    </form>
+</div>

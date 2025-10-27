@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Magazin.Models.Genre>
+@{
+    ViewData["Title"] = "Жанры";
+}
+<div class="container py-4">
+    <h2 class="mb-4 fw-bold text-center">📖 Жанры</h2>
+    <a asp-action="CreateGenre" class="btn btn-success mb-3">➕ Добавить жанр</a>
+
+    <table class="table table-bordered table-striped">
+        <thead class="table-light">
+            <tr>
+                <th>Название</th>
+                <th class="text-center">Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var g in Model)
+            {
+                <tr>
+                    <td>@g.NameGenre</td>
+                    <td class="text-center">
+                        <a asp-action="EditGenre" asp-route-id="@g.IdGenre" class="btn btn-primary btn-sm">✏ Редактировать</a>
+                        <a asp-action="DeleteGenre" asp-route-id="@g.IdGenre" class="btn btn-danger btn-sm">🗑 Удалить</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

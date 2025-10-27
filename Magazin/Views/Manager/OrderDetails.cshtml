@@ -1,0 +1,35 @@
+﻿@model Magazin.Models.Order
+
+<div class="container py-4">
+    <h2 class="fw-bold text-center mb-4">📝 Детали заказа #@Model.IdOrder</h2>
+
+    <div class="card p-3 mb-4">
+        <p><strong>Пользователь:</strong> @(Model.User?.LoginUser ?? $"ID {Model.UserId}")</p>
+        <p><strong>Дата:</strong> @Model.Date.ToShortDateString()</p>
+        <p><strong>Статус:</strong> <span class="badge bg-info">@Model.StatusOrders</span></p>
+        <p><strong>Сумма заказа:</strong> @Model.TotalSum ₽</p>
+    </div>
+
+    <h4>Товары в заказе</h4>
+    <table class="table table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>Книга</th>
+                <th>Количество</th>
+                <th>Цена</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.OrderItems)
+            {
+                <tr>
+                    <td>@(item.Book?.Title ?? $"ID {item.BookId}")</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.Price ₽</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a class="btn btn-secondary mt-3" asp-action="Orders">⬅ Назад к заказам</a>
+</div>

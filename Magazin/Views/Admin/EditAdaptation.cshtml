@@ -1,0 +1,31 @@
+﻿@model Magazin.Models.Adaptation
+
+<div class="container py-4">
+    <h2 class="fw-bold text-center mb-4">✏️ Редактировать экранизацию</h2>
+    <form asp-action="EditAdaptation" method="post" class="w-50 mx-auto">
+        <input type="hidden" asp-for="IdAdaptation" />
+
+        <div class="mb-3">
+            <label class="form-label">Название</label>
+            <input asp-for="Title" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Год выхода</label>
+            <input asp-for="ReleaseYear" type="number" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Ссылка (например, трейлер/IMDB)</label>
+            <input asp-for="Link" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Книга</label>
+            <select asp-for="BookId" asp-items="ViewBag.Books" class="form-select"></select>
+        </div>
+
+        <button class="btn btn-primary">Сохранить изменения</button>
+        <a asp-action="Adaptations" class="btn btn-secondary">Отмена</a>
+    </form>
+</div>

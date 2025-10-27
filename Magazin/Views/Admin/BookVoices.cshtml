@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Magazin.Models.BookVoice>
+
+<div class="container py-4">
+    <h2 class="mb-4 fw-bold text-center">🎧 Аудиоаннотации</h2>
+    <a asp-action="CreateBookVoice" class="btn btn-success mb-3">➕ Добавить аудио</a>
+    <table class="table table-bordered table-striped align-middle">
+        <thead class="table-light">
+            <tr>
+                <th>Книга</th>
+                <th>Название озвучки</th>
+                <th>Формат</th>
+                <th>Длительность (сек)</th>
+                <th>Ссылка</th>
+                <th class="text-center">Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var v in Model)
+            {
+                <tr>
+                    <td>@v.Book?.Title</td>
+                    <td>@v.Title</td>
+                    <td>@v.Format</td>
+                    <td>@v.DurationSeconds</td>
+                    <td>
+                        @if (!string.IsNullOrWhiteSpace(v.VoiceUrl))
+                        {
+                            <audio controls style="width: 200px;">
+                                <source src="@v.VoiceUrl" type="audio/mpeg">
+                                Ваш браузер не поддерживает аудио.
+                            </audio>
+                        }
+                    </td>
+                    <td class="text-center">
+                        <a asp-action="EditBookVoice" asp-route-id="@v.IdVoice" class="btn btn-primary btn-sm">✏</a>
+                        <a asp-action="DeleteBookVoice" asp-route-id="@v.IdVoice" class="btn btn-danger btn-sm">🗑</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

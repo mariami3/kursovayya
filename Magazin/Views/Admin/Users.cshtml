@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Magazin.Models.User>
+<div class="container py-4">
+    <h2 class="mb-4 fw-bold text-center">👤 Пользователи</h2>
+    <a asp-action="CreateUser" class="btn btn-success mb-3">➕ Добавить пользователя</a>
+    <table class="table table-bordered table-striped">
+        <thead class="table-light">
+            <tr>
+                <th>Логин</th>
+                <th>Email</th>
+                <th>Роль</th>
+                <th class="text-center">Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var u in Model)
+            {
+                <tr>
+                    <td>@u.LoginUser</td>
+                    <td>@u.Email</td>
+                    <td>@u.Role?.NameRole</td>
+                    <td class="text-center">
+                        <a asp-action="EditUser" asp-route-id="@u.IdUser" class="btn btn-primary btn-sm">✏</a>
+                        <a asp-action="DeleteUser" asp-route-id="@u.IdUser" class="btn btn-danger btn-sm">🗑</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

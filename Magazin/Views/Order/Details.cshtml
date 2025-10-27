@@ -1,0 +1,361 @@
+﻿@model Magazin.Models.Order
+
+@{
+    ViewData["Title"] = "Детали заказа";
+
+    string GetStatusClass(string status) =>
+        status switch
+        {
+            "В обработке" => "status-processing",
+            "Доставлен" => "status-delivered",
+            "Отменён" => "status-cancelled",
+            _ => "status-unknown"
+        };
+
+    string GetStatusIcon(string status) =>
+        status switch
+        {
+            "В обработке" => "⏳",
+            "Доставлен" => "✅",
+            "Отменён" => "❌",
+            _ => "⚠️"
+        };
+}
+
+<style>
+    .order-details-container {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+        padding: 20px;
+    }
+
+    .order-header {
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+        color: white;
+        padding: 30px;
+        border-radius: 1rem 1rem 0 0;
+        margin: -1rem -1rem 2rem -1rem;
+    }
+
+    .order-title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .order-card {
+        background: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        border: none;
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+
+    .order-info-card {
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        border-radius: 1rem;
+        padding: 25px;
+        margin-bottom: 30px;
+    }
+
+    .info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .info-item {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .info-label {
+        font-weight: 600;
+        color: #6c757d;
+        font-size: 0.9rem;
+    }
+
+    .info-value {
+        font-weight: 700;
+        color: #2c3e50;
+        font-size: 1.1rem;
+    }
+
+    .status-badge {
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .status-processing {
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+        color: white;
+    }
+
+    .status-delivered {
+        background: linear-gradient(135deg, #28a745, #20c997);
+        color: white;
+    }
+
+    .status-cancelled {
+        background: linear-gradient(135deg, #dc3545, #e74c3c);
+        color: white;
+    }
+
+    .status-unknown {
+        background: linear-gradient(135deg, #ffc107, #fd7e14);
+        color: #2c3e50;
+    }
+
+    .total-amount {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #28a745;
+        text-shadow: 0 2px 4px rgba(40, 167, 69, 0.2);
+    }
+
+    .order-items-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        background: white;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+        .order-items-table thead th {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 20px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border: none;
+        }
+
+        .order-items-table tbody tr {
+            transition: all 0.3s ease;
+        }
+
+            .order-items-table tbody tr:hover {
+                background: rgba(79, 172, 254, 0.05);
+                transform: translateY(-1px);
+            }
+
+        .order-items-table tbody td {
+            padding: 20px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            vertical-align: middle;
+        }
+
+    .book-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .book-image {
+        width: 70px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        transition: transform 0.3s ease;
+    }
+
+        .book-image:hover {
+            transform: scale(1.05);
+        }
+
+    .book-info {
+        flex: 1;
+    }
+
+    .book-title {
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 5px;
+        font-size: 1.1rem;
+    }
+
+    .book-author {
+        color: #6c757d;
+        font-size: 0.9rem;
+    }
+
+    .price-amount {
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .back-btn {
+        background: linear-gradient(135deg, #6c757d, #5a6268);
+        color: white;
+        border: none;
+        border-radius: 2rem;
+        padding: 12px 30px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(108, 117, 125, 0.3);
+            color: white;
+        }
+
+    .empty-order {
+        text-align: center;
+        padding: 60px 20px;
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        border-radius: 1rem;
+        border: 2px dashed #dee2e6;
+    }
+
+    .empty-order-icon {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        opacity: 0.7;
+    }
+
+    @@media (max-width: 768px) {
+        .order-items-table thead {
+            display: none;
+        }
+
+        .order-items-table tbody tr {
+            display: block;
+            margin-bottom: 20px;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+
+        .order-items-table tbody td {
+            display: block;
+            text-align: center;
+            border: none;
+            padding: 15px 10px;
+        }
+
+        .book-item {
+            flex-direction: column;
+            text-align: center;
+            gap: 15px;
+        }
+
+        .info-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<div class="order-details-container">
+    <div class="container py-4">
+        <div class="order-card p-4">
+            <div class="order-header">
+                <h1 class="order-title">📦 Детали заказа №@Model.IdOrder</h1>
+            </div>
+
+            <div class="order-info-card">
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label">📅 Дата заказа</span>
+                        <span class="info-value">@Model.Date.ToString("dd.MM.yyyy HH:mm")</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">📊 Статус</span>
+                        <span class="status-badge @GetStatusClass(Model.StatusOrders)">
+                            @GetStatusIcon(Model.StatusOrders) @Model.StatusOrders
+                        </span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">💰 Общая сумма</span>
+                        <span class="total-amount">
+                            @Model.TotalSum.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("ru-RU"))
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="mb-4 fw-bold" style="color: #2c3e50;">📚 Состав заказа</h4>
+
+            @if (Model.OrderItems == null || !Model.OrderItems.Any())
+            {
+                <div class="empty-order">
+                    <div class="empty-order-icon">📭</div>
+                    <h3 class="text-muted mb-3">В заказе нет товаров</h3>
+                </div>
+            }
+            else
+            {
+                <div class="table-responsive">
+                    <table class="order-items-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Книга</th>
+                                <th class="text-center" style="width: 15%;">Количество</th>
+                                <th class="text-center" style="width: 15%;">Цена за шт.</th>
+                                <th class="text-center" style="width: 20%;">Сумма</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.OrderItems)
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="book-item">
+                                            <img src="@(string.IsNullOrEmpty(item.Book?.BookUrl) ? "/images/no-image.png" : item.Book.BookUrl)"
+                                                 alt="@item.Book?.Title"
+                                                 class="book-image" />
+                                            <div class="book-info">
+                                                <div class="book-title">@item.Book?.Title</div>
+                                                <div class="book-author">Автор: @item.Book?.Author?.NameAuthor</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="price-amount">@item.Quantity</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="price-amount text-success">@item.Price.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("ru-RU"))</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="price-amount text-success fw-bold">
+                                            @((item.Quantity * item.Price).ToString("C", System.Globalization.CultureInfo.GetCultureInfo("ru-RU")))
+                                        </span>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+
+            <div class="mt-4 text-center">
+                <a asp-action="List" class="back-btn">
+                    ⬅ Назад к заказам
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

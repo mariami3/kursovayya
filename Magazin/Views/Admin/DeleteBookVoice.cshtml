@@ -1,0 +1,15 @@
+﻿@model Magazin.Models.BookVoice
+
+<div class="container py-4">
+    <h2 class="fw-bold text-center mb-4 text-danger">🗑 Удалить аудиоаннотацию</h2>
+
+    <div class="alert alert-warning text-center">
+        Удалить аудио <b>@Model.Title</b>?
+    </div>
+
+    <form asp-action="DeleteBookVoice" method="post" class="text-center">
+        <input type="hidden" asp-for="IdVoice" />
+        <button class="btn btn-danger">Удалить</button>
+        <a asp-action="BookVoices" class="btn btn-secondary">Отмена</a>
+    </form>
+</div>

@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Magazin.Models.Adaptation>
+<div class="container py-4">
+    <h2 class="mb-4 fw-bold text-center">🎬 Экранизации</h2>
+    <a asp-action="CreateAdaptation" class="btn btn-success mb-3">➕ Добавить экранизацию</a>
+    <table class="table table-bordered table-striped">
+        <thead class="table-light">
+            <tr>
+                <th>Название</th>
+                <th>Год</th>
+                <th>Книга</th>
+                <th class="text-center">Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var a in Model)
+            {
+                    <tr>
+                        <td>@a.Title</td>
+                        <td>@a.ReleaseYear</td>
+                        <td>@a.Book?.Title</td>
+                        <td class="text-center">
+                            <a asp-action="EditAdaptation" asp-route-id="@a.IdAdaptation" class="btn btn-primary btn-sm">✏</a>
+                            <a asp-action="DeleteAdaptation" asp-route-id="@a.IdAdaptation" class="btn btn-danger btn-sm">🗑</a>
+                        </td>
+                    </tr>
+            }
+        </tbody>
+    </table>
+</div>

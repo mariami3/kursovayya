@@ -1,0 +1,89 @@
+﻿@model Magazin.Models.StatisticsData
+@{
+    ViewData["Title"] = "Статистика";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">📊 Популярность книг, жанров и авторов</h2>
+
+    <div class="text-center mb-4">
+        <a class="btn btn-outline-primary m-1" asp-action="Index" asp-route-period="day">День</a>
+        <a class="btn btn-outline-primary m-1" asp-action="Index" asp-route-period="week">Неделя</a>
+        <a class="btn btn-outline-primary m-1" asp-action="Index" asp-route-period="month">Месяц</a>
+        <a class="btn btn-outline-primary m-1" asp-action="Index" asp-route-period="year">Год</a>
+        <a class="btn btn-success m-1" asp-action="ExportToExcel" asp-route-period="month">💾 Экспорт в Excel</a>
+    </div>
+
+    <div class="mt-5 text-center">
+        <h4>📦 Статистика заказов и пользователей</h4>
+        <p>За последнюю неделю заказов: <strong>@Model.OrdersLastWeek</strong></p>
+        <p>За последний месяц заказов: <strong>@Model.OrdersLastMonth</strong></p>
+    </div>
+
+    <div class="row g-4 mt-4">
+        <div class="col-md-4">
+            <h4 class="text-primary text-center">📚 Книги</h4>
+            <canvas id="booksChart" height="250"></canvas>
+        </div>
+        <div class="col-md-4">
+            <h4 class="text-success text-center">🎭 Жанры</h4>
+            <canvas id="genresChart" height="250"></canvas>
+        </div>
+        <div class="col-md-4">
+            <h4 class="text-danger text-center">✍️ Авторы</h4>
+            <canvas id="authorsChart" height="250"></canvas>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const createChart = (ctxId, labels, data, color) => {
+            new Chart(document.getElementById(ctxId), {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Количество продаж',
+                        data: data,
+                        backgroundColor: color,
+                        borderRadius: 6,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: { color: "rgba(0,0,0,0.05)" }
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: { enabled: true },
+                        datalabels: {
+                            anchor: 'end',
+                            align: 'end',
+                            color: '#333',
+                            font: { weight: 'bold' }
+                        }
+                    },
+                    animation: {
+                        duration: 1200,
+                        easing: 'easeOutQuart'
+                    }
+                },
+                plugins: [ChartDataLabels]
+            });
+        };
+
+        // подключаем плагин для подписей
+        import('https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0').then(() => {
+            createChart('booksChart', @Html.Raw(Json.Serialize(Model.TopBooks)), @Html.Raw(Json.Serialize(Model.TopBooksCount)), 'rgba(13,110,253,0.6)');
+            createChart('genresChart', @Html.Raw(Json.Serialize(Model.TopGenres)), @Html.Raw(Json.Serialize(Model.TopGenresCount)), 'rgba(25,135,84,0.6)');
+            createChart('authorsChart', @Html.Raw(Json.Serialize(Model.TopAuthors)), @Html.Raw(Json.Serialize(Model.TopAuthorsCount)), 'rgba(220,53,69,0.6)');
+        });
+    </script>
+}

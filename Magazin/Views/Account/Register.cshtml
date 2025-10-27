@@ -1,0 +1,437 @@
+﻿@model Magazin.Models.User
+@{
+    ViewData["Title"] = "Регистрация";
+}
+
+<div class="auth-container">
+    <div class="auth-wrapper">
+        <div class="auth-card">
+            <!-- Декоративный элемент с книжной тематикой -->
+            <div class="auth-header">
+                <div class="book-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 19.5C4 18.837 4.26339 18.2011 4.73223 17.7322C5.20107 17.2634 5.83696 17 6.5 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M6.5 2H20V22H6.5C5.83696 22 5.20107 21.7366 4.73223 21.2678C4.26339 20.7989 4 20.163 4 19.5V4.5C4 3.83696 4.26339 3.20107 4.73223 2.73223C5.20107 2.26339 5.83696 2 6.5 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h1 class="auth-title">Создание аккаунта</h1>
+                <p class="auth-subtitle">Заполните данные для регистрации</p>
+            </div>
+
+            <form asp-action="Register" method="post" class="auth-form">
+                <div class="form-group">
+                    <label asp-for="LoginUser" class="form-label">Логин</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <input asp-for="LoginUser" class="form-input" placeholder="Введите ваш логин" required />
+                    </div>
+                    <span asp-validation-for="LoginUser" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Email" class="form-label">Электронная почта</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" />
+                                <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </span>
+                        <input asp-for="Email" type="email" class="form-input" placeholder="Введите ваш email" required />
+                    </div>
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="PasswordUser" class="form-label">Пароль</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke="currentColor" stroke-width="2" />
+                                <path d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </span>
+                        <input asp-for="PasswordUser" type="password" class="form-input" placeholder="Введите ваш пароль" required />
+                    </div>
+                    <span asp-validation-for="PasswordUser" class="text-danger"></span>
+                    <div class="password-requirements">
+                        <small>Пароль должен быть не менее 6 символов и содержать хотя бы один спецсимвол</small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword" class="form-label">Подтвердите пароль</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke="currentColor" stroke-width="2" />
+                                <path d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11" stroke="currentColor" stroke-width="2" />
+                                <path d="M12 15V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </span>
+                        <input type="password" class="form-input" name="confirmPassword" placeholder="Повторите ваш пароль" required />
+                    </div>
+                </div>
+
+                <button type="submit" class="auth-button">
+                    <span class="button-text">Создать аккаунт</span>
+                    <span class="button-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H6C4.93913 15 3.92172 15.4214 3.17157 16.1716C2.42143 16.9217 2 17.9391 2 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M17 8V14M20 11H14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </span>
+                </button>
+            </form>
+
+            <div class="auth-links">
+                <div class="auth-divider">
+                    <span>или</span>
+                </div>
+
+                <a asp-action="Autorization" class="auth-link register-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Уже есть аккаунт? Войти
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        height: 100%;
+        width: 100%;
+    }
+
+    .auth-container {
+        min-height: 100vh;
+        width: 100vw;
+        background: linear-gradient(135deg, #3a6bc9 0%, #4a7fd4 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: auto;
+    }
+
+        .auth-container::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: radial-gradient(circle at 20% 80%, rgba(58, 107, 201, 0.8) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(74, 127, 212, 0.6) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+    .auth-wrapper {
+        width: 100%;
+        max-width: 440px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .auth-card {
+        background: rgba(255, 255, 255, 0.98);
+        border: 1px solid #e2e8f0;
+        border-radius: 15px;
+        padding: 40px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        position: relative;
+    }
+
+        .auth-card::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border: 1px solid rgba(226, 232, 240, 0.3);
+            border-radius: 10px;
+            pointer-events: none;
+        }
+
+    .auth-header {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .book-icon {
+        color: #4a7fd4;
+        margin-bottom: 16px;
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    }
+
+    .auth-title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #2d3748;
+        margin-bottom: 8px;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+
+    .auth-subtitle {
+        color: #718096;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .form-group {
+        margin-bottom: 24px;
+    }
+
+    .form-label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #4a5568;
+        font-size: 14px;
+    }
+
+    .input-wrapper {
+        position: relative;
+    }
+
+    .input-icon {
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #a0aec0;
+    }
+
+    .form-input {
+        width: 100%;
+        padding: 16px 16px 16px 48px;
+        border: 2px solid #e2e8f0;
+        border-radius: 10px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        background: rgba(255, 255, 255, 0.95);
+        color: #4a5568;
+    }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #4a7fd4;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(74, 127, 212, 0.15);
+        }
+
+        .form-input::placeholder {
+            color: #a0aec0;
+            opacity: 0.8;
+        }
+
+    .auth-button {
+        width: 100%;
+        background: linear-gradient(135deg, #4a7fd4 0%, #3a6bc9 100%);
+        color: white;
+        border: none;
+        padding: 16px 24px;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 8px;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .auth-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+            transition: left 0.5s;
+        }
+
+        .auth-button:hover::before {
+            left: 100%;
+        }
+
+        .auth-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px rgba(74, 127, 212, 0.35);
+            background: linear-gradient(135deg, #5a8fe4 0%, #4a7fd4 100%);
+        }
+
+    .button-text {
+        font-weight: 600;
+        position: relative;
+        z-index: 1;
+    }
+
+    .button-icon {
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .auth-links {
+        margin-top: 32px;
+        text-align: center;
+    }
+
+    .auth-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        color: #718096;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 12px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        margin: 8px 0;
+        background: rgba(113, 128, 150, 0.05);
+    }
+
+        .auth-link:hover {
+            background: rgba(113, 128, 150, 0.1);
+            color: #4a5568;
+            transform: translateX(5px);
+        }
+
+    .register-link {
+        background: rgba(247, 202, 24, 0.1);
+        border: 2px solid rgba(247, 202, 24, 0.2);
+        color: #d69e2e;
+    }
+
+        .register-link:hover {
+            border-color: #f7ca18;
+            background: rgba(247, 202, 24, 0.2);
+            color: #b7791f;
+        }
+
+    .auth-divider {
+        margin: 20px 0;
+        position: relative;
+        text-align: center;
+        color: #a0aec0;
+        font-size: 14px;
+    }
+
+        .auth-divider::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
+        }
+
+        .auth-divider span {
+            background: rgba(255, 255, 255, 0.98);
+            padding: 0 16px;
+            position: relative;
+        }
+
+    .password-requirements {
+        margin-top: 8px;
+        color: #718096;
+        font-size: 12px;
+        opacity: 0.8;
+    }
+
+    .text-danger {
+        color: #e53e3e;
+        font-size: 12px;
+        margin-top: 4px;
+        display: block;
+    }
+
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .auth-card {
+        animation: fadeIn 0.8s ease-out;
+    }
+
+    @@keyframes float {
+        0%, 100% {
+            transform: translateY(0) rotate(0deg);
+        }
+
+        50% {
+            transform: translateY(-20px) rotate(180deg);
+        }
+    }
+
+    .book-icon {
+        animation: float 6s ease-in-out infinite;
+    }
+
+    @@media (max-width: 480px) {
+        .auth-container {
+            padding: 10px;
+        }
+
+        .auth-card {
+            padding: 30px 20px;
+            margin: 10px;
+        }
+
+        .auth-title {
+            font-size: 24px;
+        }
+
+        .form-input {
+            padding: 14px 14px 14px 44px;
+        }
+    }
+
+    @@media (max-height: 600px) {
+        .auth-container {
+            align-items: flex-start;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+</style>

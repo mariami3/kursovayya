@@ -1,0 +1,358 @@
+﻿@model List<Magazin.Models.Order>
+
+@{
+    ViewData["Title"] = "Мои заказы";
+
+    (string, string, string) GetStatusClassAndIcon(string status) =>
+        status switch
+        {
+            "В обработке" => ("status-card processing", "⏳", "bg-primary"),
+            "Доставлен" => ("status-card delivered", "✅", "bg-success"),
+            "Отменён" => ("status-card cancelled", "❌", "bg-danger"),
+            _ => ("status-card unknown", "⚠️", "bg-warning")
+        };
+}
+
+<style>
+    .orders-container {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+        padding: 20px;
+    }
+
+    .orders-header {
+        background: linear-gradient(135deg, #2c3e50, #34495e);
+        color: white;
+        padding: 30px;
+        border-radius: 1rem;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .orders-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .order-card {
+        background: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        border: none;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        height: 100%;
+    }
+
+    .order-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+    }
+
+    .order-card-header {
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+        color: white;
+        padding: 20px;
+        position: relative;
+    }
+
+    .order-number {
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .order-card-body {
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        height: calc(100% - 80px);
+    }
+
+    .order-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .info-item {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .info-label {
+        font-weight: 600;
+        color: #6c757d;
+        font-size: 0.85rem;
+    }
+
+    .info-value {
+        font-weight: 700;
+        color: #2c3e50;
+        font-size: 1rem;
+    }
+
+    .status-card {
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .processing {
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+        color: white;
+    }
+
+    .delivered {
+        background: linear-gradient(135deg, #28a745, #20c997);
+        color: white;
+    }
+
+    .cancelled {
+        background: linear-gradient(135deg, #dc3545, #e74c3c);
+        color: white;
+    }
+
+    .unknown {
+        background: linear-gradient(135deg, #ffc107, #fd7e14);
+        color: #2c3e50;
+    }
+
+    .total-amount {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #28a745;
+        text-shadow: 0 2px 4px rgba(40, 167, 69, 0.2);
+    }
+
+    .books-preview {
+        margin: 15px 0;
+    }
+
+    .books-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .book-preview {
+        width: 50px;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .book-preview:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .order-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: auto;
+        padding-top: 20px;
+        border-top: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .details-btn {
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+        color: white;
+        border: none;
+        border-radius: 2rem;
+        padding: 10px 20px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.9rem;
+    }
+
+    .details-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(79, 172, 254, 0.3);
+        color: white;
+    }
+
+    .books-count {
+        background: linear-gradient(135deg, #6c757d, #5a6268);
+        color: white;
+        padding: 6px 12px;
+        border-radius: 15px;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+
+    .empty-orders {
+        text-align: center;
+        padding: 80px 20px;
+        background: white;
+        border-radius: 1rem;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+
+    .empty-orders-icon {
+        font-size: 5rem;
+        margin-bottom: 20px;
+        opacity: 0.7;
+    }
+
+    .back-shopping-btn {
+        background: linear-gradient(135deg, #28a745, #20c997);
+        color: white;
+        border: none;
+        border-radius: 2rem;
+        padding: 12px 30px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .back-shopping-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+        color: white;
+    }
+
+    @@media (max-width: 768px) {
+        .order-info {
+            grid-template-columns: 1fr;
+        }
+
+        .orders-title {
+            font-size: 2rem;
+        }
+
+        .order-actions {
+            flex-direction: column;
+            gap: 15px;
+            text-align: center;
+        }
+
+        .books-grid {
+            grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+        }
+
+        .book-preview {
+            width: 40px;
+            height: 60px;
+        }
+    }
+</style>
+
+<div class="orders-container">
+    <div class="container py-4">
+        <div class="orders-header">
+            <h1 class="orders-title" style="color: white;">📦 Мои заказы</h1>
+        </div>
+
+        @if (Model == null || !Model.Any())
+        {
+            <div class="empty-orders">
+                <div class="empty-orders-icon">😔</div>
+                <h3 class="text-muted mb-3">У вас пока нет заказов</h3>
+                <p class="text-muted mb-4">Начните покупки и ваши заказы появятся здесь</p>
+                <a asp-controller="Catalog" asp-action="Catalog" class="back-shopping-btn">
+                    ⬅ Вернуться к покупкам
+                </a>
+            </div>
+        }
+        else
+        {
+            <div class="row g-4">
+                @foreach (var order in Model)
+                {
+                    var (statusClass, statusIcon, _) = GetStatusClassAndIcon(order.StatusOrders);
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="order-card">
+                            <div class="order-card-header">
+                                <h3 class="order-number">📦 Заказ №@order.IdOrder</h3>
+                            </div>
+                            <div class="order-card-body">
+                                <div class="order-info">
+                                    <div class="info-item">
+                                        <span class="info-label">📅 Дата</span>
+                                        <span class="info-value">@order.Date.ToString("dd.MM.yyyy HH:mm")</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-label">📊 Статус</span>
+                                        <span class="@statusClass">
+                                            @statusIcon @order.StatusOrders
+                                        </span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-label">💰 Сумма</span>
+                                        <span class="total-amount">@order.TotalSum.ToString("0.00") ₽</span>
+                                    </div>
+                                </div>
+
+                                <div class="books-preview">
+                                    <span class="info-label">📚 Книги в заказе</span>
+                                    @if (order.OrderItems != null && order.OrderItems.Any())
+                                    {
+                                        <div class="books-grid">
+                                            @foreach (var item in order.OrderItems.Take(6))
+                                            {
+                                                <img src="@(item.Book?.BookUrl ?? "/images/no-image.png")" 
+                                                     alt="@item.Book?.Title" 
+                                                     title="@item.Book?.Title" 
+                                                     class="book-preview" />
+                                            }
+                                            @if (order.OrderItems.Count > 6)
+                                            {
+                                                <div class="book-preview d-flex align-items-center justify-content-center" 
+                                                     style="background: linear-gradient(135deg, #4facfe, #00f2fe); color: white; font-weight: bold;">
+                                                    +@(order.OrderItems.Count - 6)
+                                                </div>
+                                            }
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">Нет книг</span>
+                                    }
+                                </div>
+
+                                <div class="order-actions">
+                                    <a class="details-btn" asp-action="Details" asp-route-id="@order.IdOrder">
+                                        👀 Подробнее
+                                    </a>
+                                    <span class="books-count">
+                                        @(order.OrderItems?.Count ?? 0) шт.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div> 

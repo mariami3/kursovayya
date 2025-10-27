@@ -1,0 +1,388 @@
+﻿@model List<Magazin.Models.CartItem>
+@{
+    ViewData["Title"] = "Корзина";
+}
+
+<style>
+    .cart-container {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+        padding: 20px;
+    }
+
+    .cart-card {
+        background: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        border: none;
+        overflow: hidden;
+    }
+
+    .cart-header {
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+        color: white;
+        padding: 25px;
+        margin: -1rem -1rem 2rem -1rem;
+    }
+
+    .cart-title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .empty-cart {
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .empty-cart-icon {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        opacity: 0.7;
+    }
+
+    .cart-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+    }
+
+        .cart-table thead th {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border: none;
+            padding: 20px;
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 1.1rem;
+        }
+
+        .cart-table tbody tr {
+            transition: all 0.3s ease;
+            border-radius: 0.5rem;
+        }
+
+            .cart-table tbody tr:hover {
+                background: rgba(79, 172, 254, 0.05);
+                transform: translateY(-2px);
+            }
+
+        .cart-table tbody td {
+            padding: 25px 20px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            vertical-align: middle;
+        }
+
+    .book-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .book-image {
+        width: 80px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        transition: transform 0.3s ease;
+    }
+
+        .book-image:hover {
+            transform: scale(1.05);
+        }
+
+    .book-info {
+        flex: 1;
+    }
+
+    .book-title {
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 5px;
+        font-size: 1.1rem;
+    }
+
+    .book-author {
+        color: #6c757d;
+        font-size: 0.9rem;
+    }
+
+    .quantity-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .quantity-input {
+        width: 80px;
+        text-align: center;
+        border: 2px solid #e9ecef;
+        border-radius: 0.5rem;
+        padding: 8px 12px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+        .quantity-input:focus {
+            border-color: #4facfe;
+            box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.1);
+        }
+
+    .update-btn {
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+        border: none;
+        border-radius: 0.5rem;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        transition: all 0.3s ease;
+    }
+
+        .update-btn:hover {
+            transform: rotate(180deg);
+            box-shadow: 0 4px 12px rgba(79, 172, 254, 0.3);
+        }
+
+    .price-amount {
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+
+    .text-success {
+        color: #28a745 !important;
+    }
+
+    .remove-btn {
+        background: linear-gradient(135deg, #dc3545, #e74c3c);
+        border: none;
+        border-radius: 0.5rem;
+        padding: 10px 20px;
+        color: white;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+        .remove-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+        }
+
+    .cart-footer {
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        padding: 30px;
+        border-radius: 1rem;
+        margin-top: 30px;
+    }
+
+    .total-amount {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #28a745;
+    }
+
+    .action-btn {
+        padding: 12px 30px;
+        border-radius: 2rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn-continue {
+        background: linear-gradient(135deg, #6c757d, #5a6268);
+        color: white;
+        border: none;
+    }
+
+        .btn-continue:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(108, 117, 125, 0.3);
+            color: white;
+        }
+
+    .btn-checkout {
+        background: linear-gradient(135deg, #28a745, #20c997);
+        color: white;
+        border: none;
+    }
+
+        .btn-checkout:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+            color: white;
+        }
+
+    @@media (max-width: 768px) {
+        .book-item {
+            flex-direction: column;
+            text-align: center;
+            gap: 15px;
+        }
+
+        .cart-table thead {
+            display: none;
+        }
+
+        .cart-table tbody tr {
+            display: block;
+            margin-bottom: 20px;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+
+        .cart-table tbody td {
+            display: block;
+            text-align: center;
+            border: none;
+            padding: 15px 10px;
+        }
+
+        .quantity-form {
+            justify-content: center;
+        }
+
+        .cart-footer {
+            text-align: center;
+        }
+
+            .cart-footer .d-flex {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+        .buy-one-btn {
+            background: linear-gradient(135deg, #20c997, #17a589);
+            border: none;
+            border-radius: 0.5rem;
+            padding: 10px 20px;
+            color: white;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+            .buy-one-btn:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(32, 201, 151, 0.3);
+                color: white;
+            }
+    }
+</style>
+
+<div class="cart-container">
+    <div class="container py-4">
+        <div class="cart-card p-4">
+            <div class="cart-header">
+                <h1 class="cart-title">🛒 Моя корзина</h1>
+            </div>
+
+            @if (!Model.Any())
+            {
+                <div class="empty-cart">
+                    <div class="empty-cart-icon">😔</div>
+                    <h3 class="text-muted mb-3">Ваша корзина пуста</h3>
+                    <a asp-action="Catalog" class="btn btn-success btn-lg action-btn">
+                        ⬅ Вернуться к покупкам
+                    </a>
+                </div>
+            }
+            else
+            {
+                <div class="table-responsive">
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 40%;">Книга</th>
+                                <th class="text-center" style="width: 20%;">Количество</th>
+                                <th class="text-center" style="width: 15%;">Цена</th>
+                                <th class="text-center" style="width: 15%;">Итого</th>
+                                <th class="text-center" style="width: 10%;"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="book-item">
+                                            <img src="@(string.IsNullOrEmpty(item.Book?.BookUrl) ? "/images/no-image.png" : item.Book.BookUrl)"
+                                                 alt="@item.Book?.Title"
+                                                 class="book-image" />
+                                            <div class="book-info">
+                                                <div class="book-title">@item.Book?.Title</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <form asp-action="UpdateQuantity" method="post" class="quantity-form">
+                                            <input type="hidden" name="cartItemId" value="@item.IdCartItem" />
+                                            <input type="number" name="quantity" value="@item.Quantity" min="1"
+                                                   class="quantity-input" />
+                                            <button type="submit" class="update-btn" title="Обновить">⟳</button>
+                                        </form>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="text-success fw-semibold price-amount">@((item.Book?.Price ?? 0).ToString("C"))</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="fw-bold price-amount text-success">@(((item.Book?.Price ?? 0) * item.Quantity).ToString("C"))</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-2">
+                                            <form asp-action="RemoveFromCart" method="post" class="m-0">
+                                                <input type="hidden" name="cartItemId" value="@item.IdCartItem" />
+                                                <button type="submit" class="remove-btn" title="Удалить">
+                                                    ✖ Удалить
+                                                </button>
+                                            </form>
+
+                                            <form asp-controller="Order" asp-action="CheckoutSingle" method="post" class="m-0">
+                                                <input type="hidden" name="cartItemId" value="@item.IdCartItem" />
+                                                <button type="submit" class="buy-one-btn" title="Оформить только этот товар">
+                                                    ✅ Купить
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                            }
+                        </tbody>
+
+                    </table>
+                </div>
+
+                <div class="cart-footer">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h4 class="fw-bold mb-1">Всего:</h4>
+                            <span class="total-amount">
+                                @Model.Sum(i => (i.Book?.Price ?? 0) * i.Quantity).ToString("C")
+                            </span>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <a asp-controller="Catalog" asp-action="Catalog" class="btn-continue action-btn">
+                                ⬅ Продолжить покупки
+                            </a>
+                            <a asp-controller="Order" asp-action="Checkout" class="btn-checkout action-btn">
+                                ✅ Оформить заказ
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

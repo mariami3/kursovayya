@@ -1,0 +1,677 @@
+﻿@model Magazin.Models.Book
+@{
+    ViewData["Title"] = "Детали книги";
+    var reviews = ViewBag.Reviews as List<Magazin.Models.Review> ?? new List<Magazin.Models.Review>();
+}
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .details-container {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+        padding: 20px;
+    }
+
+    .book-details-card {
+        background: #fff;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+        margin-bottom: 30px;
+        border: none;
+    }
+
+    .book-image-section {
+        background: #f8f9fa;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 500px;
+    }
+
+    .book-main-image {
+        max-width: 100%;
+        max-height: 400px;
+        object-fit: contain;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .book-info-section {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .book-title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 15px;
+        line-height: 1.2;
+    }
+
+    .book-author {
+        font-size: 1.3rem;
+        color: #6c757d;
+        margin-bottom: 20px;
+    }
+
+    .book-meta {
+        margin-bottom: 25px;
+    }
+
+    .book-meta-item {
+        margin-bottom: 8px;
+        font-size: 1rem;
+        color: #333;
+    }
+
+    .book-price {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #28a745;
+        margin: 20px 0;
+    }
+
+    .book-description {
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 30px;
+        font-size: 1.1rem;
+    }
+
+    .specs-toggle {
+        background: none;
+        border: none;
+        color: #4facfe;
+        font-weight: 600;
+        padding: 10px 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 1.1rem;
+    }
+
+    .specs-content {
+        margin-top: 20px;
+    }
+
+    .specs-list {
+        list-style: none;
+        background: #f8f9fa;
+        border-radius: 0.75rem;
+        padding: 20px;
+    }
+
+    .specs-item {
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .specs-item:last-child {
+            border-bottom: none;
+        }
+
+    .specs-label {
+        font-weight: 600;
+        color: #2c3e50;
+        min-width: 200px;
+    }
+
+    .book-actions {
+        display: flex;
+        gap: 15px;
+        margin-top: auto;
+        flex-wrap: wrap;
+    }
+
+    .btn-back {
+        background: #6c757d;
+        color: white;
+        border: none;
+        border-radius: 2rem;
+        padding: 12px 25px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        flex: 1;
+    }
+
+        .btn-back:hover {
+            background: #5a6268;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+    .btn-cart {
+        background: linear-gradient(135deg, #2e7d32, #43a047);
+        color: white;
+        border: none;
+        border-radius: 2rem;
+        padding: 12px 25px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        flex: 2;
+    }
+
+        .btn-cart:hover {
+            background: linear-gradient(135deg, #1b5e20, #2e7d32);
+            transform: translateY(-2px);
+        }
+
+    .btn-favorite {
+        background: linear-gradient(135deg, #f6d365, #fda085);
+        color: #fff;
+        border: none;
+        border-radius: 2rem;
+        padding: 12px 25px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        flex: 1;
+    }
+
+        .btn-favorite:hover {
+            background: linear-gradient(135deg, #f5c34d, #fc865f);
+            transform: translateY(-2px);
+        }
+
+    /* Стильные отзывы */
+    .reviews-section {
+        background: #fff;
+        border-radius: 1rem;
+        padding: 30px;
+        box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+        border: none;
+    }
+
+    .reviews-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 25px;
+        position: relative;
+    }
+
+        .reviews-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            border-radius: 2px;
+        }
+
+    .review-form-card {
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        border-radius: 1rem;
+        padding: 30px;
+        margin-bottom: 30px;
+        border: 1px solid rgba(79, 172, 254, 0.1);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .form-control {
+        border-radius: 0.75rem;
+        border: 1px solid #dcdfe6;
+        padding: 12px 15px;
+        margin-bottom: 15px;
+        transition: all 0.3s ease;
+        background: #fff;
+    }
+
+        .form-control:focus {
+            border-color: #4facfe;
+            box-shadow: 0 0 0 3px rgba(79,172,254,0.1);
+            transform: translateY(-1px);
+        }
+
+    .btn-submit {
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+        border: none;
+        border-radius: 2rem;
+        padding: 12px 30px;
+        color: white;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(79, 172, 254, 0.3);
+    }
+
+        .btn-submit:hover {
+            background: linear-gradient(135deg, #3c9dff, #00d4ff);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(79, 172, 254, 0.4);
+        }
+
+    .review-item {
+        background: linear-gradient(135deg, #fff, #f8f9fa);
+        border-radius: 1rem;
+        padding: 25px;
+        margin-bottom: 20px;
+        border: 1px solid rgba(0,0,0,0.05);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .review-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            opacity: 0.8;
+        }
+
+        .review-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+    .review-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .review-user-info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .review-user {
+        font-weight: 700;
+        color: #2c3e50;
+        font-size: 1.1rem;
+    }
+
+    .review-date {
+        color: #6c757d;
+        font-size: 0.85rem;
+    }
+
+    .review-rating {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+        padding: 8px 12px;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 193, 7, 0.2);
+    }
+
+    .review-rating-stars {
+        color: #ffc107;
+        font-weight: 700;
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+    }
+
+    .review-rating-number {
+        color: #856404;
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-left: 5px;
+    }
+
+    .review-comment {
+        line-height: 1.6;
+        color: #555;
+        font-size: 1rem;
+        background: rgba(248, 249, 250, 0.5);
+        padding: 15px;
+        border-radius: 0.5rem;
+        border-left: 3px solid #4facfe;
+    }
+
+    .no-reviews {
+        text-align: center;
+        color: #6c757d;
+        font-size: 1.1rem;
+        padding: 50px;
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        border-radius: 1rem;
+        border: 2px dashed #dee2e6;
+    }
+
+        .no-reviews p {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #6c757d;
+        }
+
+    /* Адаптивность */
+    @@media (max-width: 768px) {
+        .book-details-card {
+            flex-direction: column;
+        }
+
+        .book-image-section {
+            min-height: 300px;
+        }
+
+        .book-title {
+            font-size: 1.8rem;
+        }
+
+        .book-actions {
+            flex-direction: column;
+        }
+
+        .btn-back, .btn-cart, .btn-favorite {
+            flex: none;
+        }
+
+        .review-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .review-rating {
+            align-self: flex-start;
+        }
+    }
+
+    @@media (max-width: 480px) {
+        .details-container {
+            padding: 10px;
+        }
+
+        .book-info-section {
+            padding: 25px;
+        }
+
+        .specs-item {
+            flex-direction: column;
+        }
+
+        .specs-label {
+            min-width: auto;
+            margin-bottom: 5px;
+        }
+    }
+</style>
+
+<div class="details-container">
+    <div class="book-details-card">
+        <div class="row g-0">
+            <!-- Картинка книги -->
+            <div class="col-md-4 book-image-section">
+                <img src="@(string.IsNullOrEmpty(Model.BookUrl) ? "/images/no-image.png" : Model.BookUrl)"
+                     alt="@Model.Title"
+                     class="book-main-image" />
+            </div>
+
+            <!-- Детали книги -->
+            <div class="col-md-8">
+                <div class="book-info-section">
+                    <h1 class="book-title">@Model.Title</h1>
+                    <p class="book-author">Автор: <strong>@(Model.Author?.NameAuthor ?? "Не указан")</strong></p>
+
+                    <div class="book-meta">
+                        <p class="book-meta-item"><strong>Жанр:</strong> @Model.Genre?.NameGenre</p>
+                        <p class="book-meta-item"><strong>Издательство:</strong> @(Model.PublisherBrand ?? "-")</p>
+                        <p class="book-meta-item"><strong>Год издания:</strong> @(Model.EditionYear?.ToString() ?? "-")</p>
+                    </div>
+
+                    <p class="book-price">@Model.Price.ToString("0.00") ₽</p>
+
+                    <p class="book-description">@Model.Description</p>
+
+                    <!-- Характеристики -->
+                    <button class="specs-toggle" data-bs-toggle="collapse" data-bs-target="#bookSpecs">
+                        📖 Характеристики <span id="toggleText">ещё ⬇</span>
+                    </button>
+
+                    <div class="collapse specs-content" id="bookSpecs">
+                        <ul class="specs-list">
+                            <li class="specs-item">
+                                <span class="specs-label">Тип обложки:</span>
+                                <span>@(Model.BookType ?? "-")</span>
+                            </li>
+                            <li class="specs-item">
+                                <span class="specs-label">Возрастное ограничение:</span>
+                                <span>@(Model.AgeLimit ?? "-")</span>
+                            </li>
+                            <li class="specs-item">
+                                <span class="specs-label">Страниц:</span>
+                                <span>@(Model.Pages?.ToString() ?? "-")</span>
+                            </li>
+                            <li class="specs-item">
+                                <span class="specs-label">Вес:</span>
+                                <span>@(Model.WeightGr?.ToString() ?? "-") г</span>
+                            </li>
+                            <li class="specs-item">
+                                <span class="specs-label">Размер:</span>
+                                <span>@(Model.Size ?? "-")</span>
+                            </li>
+                            <li class="specs-item">
+                                <span class="specs-label">Год публикации:</span>
+                                <span>@(Model.PublicationYear?.ToString() ?? "-")</span>
+                            </li>
+                            <!-- Ячейка с экранизацией -->
+                            @if (Model.Adaptations != null && Model.Adaptations.Any())
+                            {
+                                <li class="specs-item">
+                                    <span class="specs-label">Экранизации / Адаптации:</span>
+                                    <span>
+                                        <ul class="list-unstyled mt-1">
+                                            @foreach (var adaptation in Model.Adaptations)
+                                            {
+                                                <li class="d-flex justify-content-between align-items-center mb-1">
+                                                    <span>🎬 @adaptation.Title @(adaptation.ReleaseYear.HasValue ? $"({adaptation.ReleaseYear})" : "")</span>
+                                                    @if (!string.IsNullOrEmpty(adaptation.Link))
+                                                    {
+                                                        <a href="@adaptation.Link" target="_blank" class="btn btn-sm btn-primary">Перейти к фильму</a>
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="text-muted small">Ссылка недоступна</span>
+                                                    }
+                                                </li>
+                                            }
+                                        </ul>
+                                    </span>
+                                </li>
+                            }
+                            @if (ViewBag.BookVoices != null && ((List<Magazin.Models.BookVoice>)ViewBag.BookVoices).Any())
+                            {
+                                <li class="specs-item">
+                                    <span class="specs-label">🎧 Аудио-аннотации:</span>
+                                    <span>
+                                        <ul class="list-unstyled mt-1">
+                                            @foreach (var voice in (List<Magazin.Models.BookVoice>)ViewBag.BookVoices)
+                                            {
+                                                <li class="mb-2">
+                                                    <strong>@voice.Title</strong>
+                                                    <audio controls style="width: 100%; margin-top: 5px;">
+                                                        <source src="@voice.VoiceUrl" type="audio/mpeg" />
+                                                        Ваш браузер не поддерживает аудио.
+                                                    </audio>
+                                                    @if (voice.DurationSeconds.HasValue)
+                                                    {
+                                                        <small class="text-muted">
+                                                            ⏱ Длительность: @TimeSpan.FromSeconds(voice.DurationSeconds.Value).ToString(@"mm\:ss")
+                                                        </small>
+                                                    }
+                                                </li>
+                                            }
+                                        </ul>
+                                    </span>
+                                </li>
+                            }
+
+                        </ul>
+                    </div>
+
+                    <!-- Кнопки -->
+                    <div class="book-actions">
+                        <a asp-action="Catalog" class="btn-back">⬅ Назад</a>
+                        <form asp-controller="Basket" asp-action="AddToCart" method="post" class="d-inline">
+                            <input type="hidden" name="bookId" value="@Model.IdBook" />
+                            <input type="hidden" name="quantity" value="1" />
+                            <button type="submit" class="btn-cart">🛒 Добавить в корзину</button>
+                        </form>
+                        <form asp-controller="Favorites" asp-action="AddToFavorites" method="post" class="d-inline">
+                            <input type="hidden" name="bookId" value="@Model.IdBook" />
+                            <button type="submit" class="btn-favorite">⭐ В избранное</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Блок отзывов -->
+    <div class="reviews-section">
+        <h3 class="reviews-title">Отзывы</h3>
+
+        @if (TempData["ReviewError"] != null)
+        {
+            <div class="alert alert-danger">
+                @TempData["ReviewError"]
+            </div>
+        }
+        @if (TempData["ReviewSuccess"] != null)
+        {
+            <div class="alert alert-success">
+                @TempData["ReviewSuccess"]
+            </div>
+        }
+
+        @if (User.Identity.IsAuthenticated)
+        {
+            <div class="review-form-card">
+                <form asp-controller="Reviews" asp-action="AddReview" method="post" id="reviewForm">
+                    <input type="hidden" name="BookId" value="@Model.IdBook" />
+
+                    <div class="mb-3">
+                        <label for="Rating" class="form-label">Оценка (1-5)</label>
+                        <select class="form-control" id="Rating" name="Rating" required>
+                            <option value="" selected>Выберите оценку</option>
+                            <option value="1">1 - Плохо</option>
+                            <option value="2">2 - Неудовлетворительно</option>
+                            <option value="3">3 - Удовлетворительно</option>
+                            <option value="4">4 - Хорошо</option>
+                            <option value="5">5 - Отлично</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="Comment" class="form-label">Комментарий</label>
+                        <textarea class="form-control" id="Comment" name="Comment" rows="3"
+                                  placeholder="Напишите ваш отзыв здесь"
+                                  required maxlength="1000"></textarea>
+                        <small class="form-text text-muted">Максимум 1000 символов</small>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Отправить отзыв</button>
+                </form>
+            </div>
+        }
+
+        @if (!reviews.Any())
+        {
+            <div class="no-reviews">
+                <p>✍ Отзывов пока нет</p>
+            </div>
+        }
+        else
+        {
+            <div class="reviews-list">
+                @foreach (var review in reviews)
+                {
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div class="review-user-info">
+                                <span class="review-user">@(review.User?.LoginUser ?? review.UserName)</span>
+                                <span class="review-date">@review.DateCreated?.ToString("dd.MM.yyyy HH:mm")</span>
+                            </div>
+                            <div class="review-rating">
+                                <span class="review-rating-stars">
+                                    @for (int i = 0; i < 5; i++)
+                                    {
+                                        if (i < review.Rating)
+                                        {
+                                            <span>★</span>
+                                        }
+                                        else
+                                        {
+                                            <span>☆</span>
+                                        }
+                                    }
+                                </span>
+                                <span class="review-rating-number">(@review.Rating/5)</span>
+                            </div>
+                        </div>
+                        <p class="review-comment">@review.Comment</p>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const specs = document.getElementById('bookSpecs');
+        const toggleText = document.getElementById('toggleText');
+
+        specs.addEventListener('show.bs.collapse', function () {
+            toggleText.textContent = 'свернуть ⬆';
+        });
+
+        specs.addEventListener('hide.bs.collapse', function () {
+            toggleText.textContent = 'ещё ⬇';
+        });
+
+        // Валидация формы отзыва
+        const reviewForm = document.getElementById('reviewForm');
+        if (reviewForm) {
+            reviewForm.addEventListener('submit', function (e) {
+                const rating = document.getElementById('Rating').value;
+                const comment = document.getElementById('Comment').value.trim();
+
+                if (!rating) {
+                    e.preventDefault();
+                    alert('Пожалуйста, выберите оценку');
+                    return false;
+                }
+
+                if (!comment) {
+                    e.preventDefault();
+                    alert('Пожалуйста, напишите комментарий');
+                    return false;
+                }
+
+                if (comment.length > 1000) {
+                    e.preventDefault();
+                    alert('Комментарий слишком длинный (максимум 1000 символов)');
+                    return false;
+                }
+
+                return true;
+            });
+        }
+    });
+</script>

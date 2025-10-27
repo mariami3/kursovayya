@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Magazin.Models.Author>
+@{
+    ViewData["Title"] = "Авторы";
+}
+<div class="container py-4">
+    <h2 class="mb-4 fw-bold text-center">✍ Авторы</h2>
+    <a asp-action="CreateAuthor" class="btn btn-success mb-3">➕ Добавить автора</a>
+
+    <table class="table table-bordered table-striped">
+        <thead class="table-light">
+            <tr>
+                <th>Имя автора</th>
+                <th class="text-center">Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var a in Model)
+            {
+                <tr>
+                    <td>@a.NameAuthor</td>
+                    <td class="text-center">
+                        <a asp-action="EditAuthor" asp-route-id="@a.IdAuthor" class="btn btn-primary btn-sm">✏</a>
+                        <a asp-action="DeleteAuthor" asp-route-id="@a.IdAuthor" class="btn btn-danger btn-sm">🗑</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,287 @@
+﻿@model List<Magazin.Models.FavoriteItem>
+@{
+    ViewData["Title"] = "Избранное";
+}
+
+<style>
+    .favorites-container {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+        padding: 20px;
+    }
+
+    .favorites-card {
+        background: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        border: none;
+        overflow: hidden;
+    }
+
+    .favorites-header {
+        background: linear-gradient(135deg, #f6d365, #fda085);
+        color: white;
+        padding: 25px;
+        margin: -1rem -1rem 2rem -1rem;
+    }
+
+    .favorites-title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .empty-favorites {
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .empty-favorites-icon {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        opacity: 0.7;
+    }
+
+    .favorites-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+    }
+
+    .favorites-table thead th {
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        border: none;
+        padding: 20px;
+        font-weight: 600;
+        color: #2c3e50;
+        font-size: 1.1rem;
+    }
+
+    .favorites-table tbody tr {
+        transition: all 0.3s ease;
+        border-radius: 0.5rem;
+    }
+
+    .favorites-table tbody tr:hover {
+        background: rgba(246, 211, 101, 0.05);
+        transform: translateY(-2px);
+    }
+
+    .favorites-table tbody td {
+        padding: 25px 20px;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+        vertical-align: middle;
+    }
+
+    .favorite-book-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .favorite-book-image {
+        width: 80px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        transition: transform 0.3s ease;
+    }
+
+    .favorite-book-image:hover {
+        transform: scale(1.05);
+    }
+
+    .favorite-book-info {
+        flex: 1;
+    }
+
+    .favorite-book-title {
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 5px;
+        font-size: 1.1rem;
+    }
+
+    .favorite-book-author {
+        color: #6c757d;
+        font-size: 0.9rem;
+    }
+
+    .favorite-price {
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: #28a745;
+    }
+
+    .favorite-actions {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .remove-favorite-btn {
+        background: linear-gradient(135deg, #dc3545, #e74c3c);
+        border: none;
+        border-radius: 0.5rem;
+        padding: 10px 20px;
+        color: white;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+    .remove-favorite-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+    }
+
+    .add-to-cart-btn {
+        background: linear-gradient(135deg, #28a745, #20c997);
+        border: none;
+        border-radius: 0.5rem;
+        padding: 10px 20px;
+        color: white;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .add-to-cart-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+        color: white;
+    }
+
+    .back-to-shopping {
+        background: linear-gradient(135deg, #6c757d, #5a6268);
+        color: white;
+        border: none;
+        border-radius: 2rem;
+        padding: 12px 30px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .back-to-shopping:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(108, 117, 125, 0.3);
+        color: white;
+    }
+
+    @@media (max-width: 768px) {
+        .favorite-book-item {
+            flex-direction: column;
+            text-align: center;
+            gap: 15px;
+        }
+
+        .favorites-table thead {
+            display: none;
+        }
+
+        .favorites-table tbody tr {
+            display: block;
+            margin-bottom: 20px;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+
+        .favorites-table tbody td {
+            display: block;
+            text-align: center;
+            border: none;
+            padding: 15px 10px;
+        }
+
+        .favorite-actions {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .empty-favorites {
+            padding: 40px 20px;
+        }
+    }
+</style>
+
+<div class="favorites-container">
+    <div class="container py-4">
+        <div class="favorites-card p-4">
+            <div class="favorites-header">
+                <h1 class="favorites-title">⭐ Мои избранные книги</h1>
+            </div>
+
+            @if (!Model.Any())
+            {
+                <div class="empty-favorites">
+                    <div class="empty-favorites-icon">😔</div>
+                    <h3 class="text-muted mb-3">У вас пока нет избранных книг</h3>
+                    <a asp-controller="Catalog" asp-action="Catalog" class="back-to-shopping">
+                        ⬅ Вернуться к покупкам
+                    </a>
+                </div>
+            }
+            else
+            {
+                <div class="table-responsive">
+                    <table class="favorites-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 60%;">Книга</th>
+                                <th class="text-center" style="width: 20%;">Цена</th>
+                                <th class="text-center" style="width: 20%;">Действия</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="favorite-book-item">
+                                            <img src="@(string.IsNullOrEmpty(item.Book?.BookUrl) ? "/images/no-image.png" : item.Book.BookUrl)"
+                                                 alt="@item.Book?.Title"
+                                                 class="favorite-book-image" />
+                                            <div class="favorite-book-info">
+                                                <div class="favorite-book-title">@item.Book?.Title</div>
+                                                <div class="favorite-book-author">Автор: @item.Book?.Author?.NameAuthor</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="favorite-price">@((item.Book?.Price ?? 0).ToString("C"))</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="favorite-actions">
+                                            <form asp-action="RemoveFromFavorites" method="post">
+                                                <input type="hidden" name="favoriteItemId" value="@item.IdFavoriteItem" />
+                                                <button type="submit" class="remove-favorite-btn">✖ Удалить</button>
+                                            </form>
+                                            <form asp-controller="Basket" asp-action="AddToCart" method="post">
+                                                <input type="hidden" name="bookId" value="@item.Book?.IdBook" />
+                                                <input type="hidden" name="quantity" value="1" />
+                                                <button type="submit" class="add-to-cart-btn">🛒 В корзину</button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+        </div>
+    </div>
+</div>

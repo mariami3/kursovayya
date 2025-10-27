@@ -1,0 +1,37 @@
+﻿@model Magazin.Models.BookVoice
+
+<div class="container py-4">
+    <h2 class="fw-bold text-center mb-4">➕ Добавить аудиоаннотацию</h2>
+
+    <form asp-action="CreateBookVoice" enctype="multipart/form-data" method="post">
+        <div class="mb-3">
+            <label class="form-label">Книга</label>
+            <select asp-for="BookId" asp-items="ViewBag.Books" required class="form-select">
+                <option value="">-- выберите книгу --</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Название аудио</label>
+            <input asp-for="Title" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Файл аудио</label>
+            <input type="file" name="audioFile" class="form-control" accept=".mp3,.wav,.ogg" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Длительность (секунды)</label>
+            <input asp-for="DurationSeconds" type="number" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Формат (например: mp3, wav)</label>
+            <input asp-for="Format" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Сохранить</button>
+        <a asp-action="BookVoices" class="btn btn-secondary">Отмена</a>
+    </form>
+
+</div>

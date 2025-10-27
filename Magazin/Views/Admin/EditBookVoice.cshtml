@@ -1,0 +1,51 @@
+﻿@model Magazin.Models.BookVoice
+
+<div class="container py-4">
+    <h2 class="fw-bold text-center mb-4">✏️ Редактировать аудиоаннотацию</h2>
+
+    <form asp-action="EditBookVoice" method="post" enctype="multipart/form-data" class="w-75 mx-auto">
+        <input type="hidden" asp-for="IdVoice" />
+
+        <div class="mb-3">
+            <label class="form-label">Книга</label>
+            <select asp-for="BookId" asp-items="ViewBag.Books" required class="form-select"></select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Название аудио</label>
+            <input asp-for="Title" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Текущий файл</label><br />
+            @if (!string.IsNullOrWhiteSpace(Model.VoiceUrl))
+            {
+                <audio controls style="width: 250px;">
+                    <source src="@Model.VoiceUrl" type="audio/mpeg">
+                </audio>
+            }
+            else
+            {
+                <span class="text-muted">Файл отсутствует</span>
+            }
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Новый файл (если нужно заменить)</label>
+            <input type="file" name="audioFile" class="form-control" accept="audio/*" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Длительность (сек)</label>
+            <input asp-for="DurationSeconds" type="number" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Формат</label>
+            <input asp-for="Format" class="form-control" />
+        </div>
+
+        <button class="btn btn-primary">Сохранить изменения</button>
+        <a asp-action="BookVoices" class="btn btn-secondary">Отмена</a>
+    </form>
+</div>

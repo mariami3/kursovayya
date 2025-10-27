@@ -1,0 +1,51 @@
+﻿@model List<Magazin.Models.Order>
+
+<div class="container py-4">
+    <h2 class="fw-bold text-center mb-4">📊 Аналитика заказов</h2>
+
+    <div class="row text-center mb-4">
+        <div class="col-md-4">
+            <div class="card shadow-sm p-3">
+                <h5>Всего заказов</h5>
+                <p class="fw-bold fs-4">@ViewBag.TotalOrders</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm p-3">
+                <h5>Общая сумма</h5>
+                <p class="fw-bold fs-4">@ViewBag.TotalSum ₽</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm p-3">
+                <h5>Доставлено</h5>
+                <p class="fw-bold fs-4">@ViewBag.CompletedOrders</p>
+            </div>
+        </div>
+    </div>
+
+    <h4 class="mt-4">Последние заказы</h4>
+    <table class="table table-striped table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Пользователь</th>
+                <th>Дата</th>
+                <th>Сумма</th>
+                <th>Статус</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in Model.Take(10))
+            {
+                <tr>
+                    <td>@order.IdOrder</td>
+                    <td>@order.UserId</td>
+                    <td>@order.Date.ToShortDateString()</td>
+                    <td>@order.TotalSum ₽</td>
+                    <td><span class="badge bg-info">@order.StatusOrders</span></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

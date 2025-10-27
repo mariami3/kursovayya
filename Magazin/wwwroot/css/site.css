@@ -1,0 +1,107 @@
+/* Общие стили */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+/* Центрирование контейнеров */
+
+.container {
+    max-width: 1200px;
+}
+/* Заголовки */
+
+h2, h1 {
+    font-weight: 600;
+    color: #2c3e50;
+}
+/* Карточки */
+
+.card {
+    border: none;
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+    }
+/* Кнопки */
+
+.btn {
+    border-radius: 2rem;
+    font-weight: 500;
+    padding: 0.6rem 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    border: none;
+    color: #fff;
+}
+
+    .btn-primary:hover {
+        background: linear-gradient(135deg, #3c9dff, #00d4ff);
+        transform: translateY(-2px);
+    }
+
+.btn-success {
+    background: linear-gradient(135deg, #43e97b, #38f9d7);
+    border: none;
+    color: #fff;
+}
+
+    .btn-success:hover {
+        background: linear-gradient(135deg, #2fc46f, #2fd7b6);
+        transform: translateY(-2px);
+    }
+
+.btn-warning {
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    border: none;
+    color: #fff;
+}
+
+    .btn-warning:hover {
+        background: linear-gradient(135deg, #f5c34d, #fc865f);
+        transform: translateY(-2px);
+    }
+/* Поля ввода */
+
+.form-control {
+    border-radius: 0.75rem;
+    border: 1px solid #dcdfe6;
+    padding: 0.65rem 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .form-control:focus {
+        border-color: #4facfe;
+        box-shadow: 0 0 6px rgba(79,172,254,0.4);
+    }
+/* Ссылки */
+
+a {
+    color: #4facfe;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+    a:hover {
+        color: #00c6ff;
+        text-decoration: underline;
+    }
+/* Сообщения об ошибках */
+
+.alert {
+    border-radius: 0.75rem;
+    padding: 0.75rem 1.2rem;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Magazin.Models.Role>
+<div class="container py-4">
+    <h2 class="mb-4 fw-bold text-center">🛡 Роли</h2>
+    <a asp-action="CreateRole" class="btn btn-success mb-3">➕ Добавить роль</a>
+    <table class="table table-bordered table-striped">
+        <thead class="table-light">
+            <tr>
+                <th>Название роли</th>
+                <th class="text-center">Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var r in Model)
+            {
+                <tr>
+                    <td>@r.NameRole</td>
+                    <td class="text-center">
+                        <a asp-action="EditRole" asp-route-id="@r.IdRole" class="btn btn-primary btn-sm">✏</a>
+                        <a asp-action="DeleteRole" asp-route-id="@r.IdRole" class="btn btn-danger btn-sm">🗑</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

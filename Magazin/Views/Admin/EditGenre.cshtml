@@ -1,0 +1,18 @@
+﻿@model Magazin.Models.Genre
+@{
+    ViewData["Title"] = "Редактировать жанр";
+}
+<div class="container py-4">
+    <h2 class="fw-bold text-center mb-4">✏ Редактировать жанр</h2>
+
+    <form asp-action="EditGenre" method="post" class="w-50 mx-auto">
+        <input type="hidden" asp-for="IdGenre" />
+        <div class="mb-3">
+            <label class="form-label">Название жанра</label>
+            <input asp-for="NameGenre" class="form-control" />
+            <span asp-validation-for="NameGenre" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Сохранить</button>
+        <a asp-action="Genres" class="btn btn-secondary">Отмена</a>
+    </form>
+</div>

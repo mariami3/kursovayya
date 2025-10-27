@@ -1,0 +1,13 @@
+﻿@model Magazin.Models.Role
+<div class="container py-4">
+    <h2 class="fw-bold text-center mb-4">✏ Редактировать роль</h2>
+    <form asp-action="EditRole" method="post" class="w-50 mx-auto">
+        <input type="hidden" asp-for="IdRole" />
+        <div class="mb-3">
+            <label class="form-label">Название роли</label>
+            <input asp-for="NameRole" class="form-control" />
+        </div>
+        <button class="btn btn-primary">Сохранить</button>
+        <a asp-action="Roles" class="btn btn-secondary">Отмена</a>
+    </form>
+</div>

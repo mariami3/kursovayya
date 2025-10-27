@@ -1,0 +1,61 @@
+﻿@model List<Magazin.Models.Order>
+
+<div class="container py-4">
+    <h2 class="fw-bold text-center mb-4">📦 Управление заказами</h2>
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Error"]</div>
+    }
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+
+    <table class="table table-bordered table-hover align-middle">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Пользователь</th>
+                <th>Дата</th>
+                <th>Сумма</th>
+                <th>Статус</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in Model)
+            {
+                <tr>
+                    <td>@order.IdOrder</td>
+                    <td>@order.UserId</td>
+                    <td>@order.Date.ToShortDateString()</td>
+                    <td>@order.TotalSum ₽</td>
+                    <td>
+                        <span class="badge bg-warning text-dark">@order.StatusOrders</span>
+                    </td>
+                    <td>
+                        <!-- Детали -->
+                        <a class="btn btn-sm btn-primary" asp-action="OrderDetails" asp-route-id="@order.IdOrder">
+                            🔍 Детали
+                        </a>
+
+                        <!-- Быстрая смена статуса -->
+                        <form asp-action="UpdateStatus" method="post" class="d-inline">
+                            <input type="hidden" name="id" value="@order.IdOrder" />
+                            <select name="newStatus" class="form-select form-select-sm d-inline w-auto">
+                                <option value="В обработке" selected>В обработке</option>
+                                <option value="Собран">Собран</option>
+                                <option value="Передан в доставку">Передан в доставку</option>
+                                <option value="Доставлен">Доставлен</option>
+                                <option value="Отменён">Отменён</option>
+                            </select>
+                            <button type="submit" class="btn btn-sm btn-success">✔</button>
+                        </form>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
